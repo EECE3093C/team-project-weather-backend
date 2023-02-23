@@ -1,0 +1,14 @@
+/Users/russell/Documents/GitHub/team-project-weather-backend/WeatherBackend/Weather.Core/bin/Debug/net6.0/Weather.Core.deps.json
+/Users/russell/Documents/GitHub/team-project-weather-backend/WeatherBackend/Weather.Core/bin/Debug/net6.0/Weather.Core.runtimeconfig.json
+/Users/russell/Documents/GitHub/team-project-weather-backend/WeatherBackend/Weather.Core/bin/Debug/net6.0/Weather.Core.dll
+/Users/russell/Documents/GitHub/team-project-weather-backend/WeatherBackend/Weather.Core/bin/Debug/net6.0/Weather.Core.pdb
+/Users/russell/Documents/GitHub/team-project-weather-backend/WeatherBackend/Weather.Core/obj/Debug/net6.0/Weather.Core.csproj.AssemblyReference.cache
+/Users/russell/Documents/GitHub/team-project-weather-backend/WeatherBackend/Weather.Core/obj/Debug/net6.0/Weather.Core.GeneratedMSBuildEditorConfig.editorconfig
+/Users/russell/Documents/GitHub/team-project-weather-backend/WeatherBackend/Weather.Core/obj/Debug/net6.0/Weather.Core.AssemblyInfoInputs.cache
+/Users/russell/Documents/GitHub/team-project-weather-backend/WeatherBackend/Weather.Core/obj/Debug/net6.0/Weather.Core.AssemblyInfo.cs
+/Users/russell/Documents/GitHub/team-project-weather-backend/WeatherBackend/Weather.Core/obj/Debug/net6.0/Weather.Core.csproj.CoreCompileInputs.cache
+/Users/russell/Documents/GitHub/team-project-weather-backend/WeatherBackend/Weather.Core/obj/Debug/net6.0/Weather.Core.dll
+/Users/russell/Documents/GitHub/team-project-weather-backend/WeatherBackend/Weather.Core/obj/Debug/net6.0/refint/Weather.Core.dll
+/Users/russell/Documents/GitHub/team-project-weather-backend/WeatherBackend/Weather.Core/obj/Debug/net6.0/Weather.Core.pdb
+/Users/russell/Documents/GitHub/team-project-weather-backend/WeatherBackend/Weather.Core/obj/Debug/net6.0/Weather.Core.genruntimeconfig.cache
+/Users/russell/Documents/GitHub/team-project-weather-backend/WeatherBackend/Weather.Core/obj/Debug/net6.0/ref/Weather.Core.dll
