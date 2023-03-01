@@ -1,0 +1,17 @@
+/Users/russell/Documents/GitHub/team-project-weather-backend/WeatherBackend/Weather.Infrastructure/bin/Debug/net6.0/Weather.Infrastructure.deps.json
+/Users/russell/Documents/GitHub/team-project-weather-backend/WeatherBackend/Weather.Infrastructure/bin/Debug/net6.0/Weather.Infrastructure.dll
+/Users/russell/Documents/GitHub/team-project-weather-backend/WeatherBackend/Weather.Infrastructure/bin/Debug/net6.0/Weather.Infrastructure.pdb
+/Users/russell/Documents/GitHub/team-project-weather-backend/WeatherBackend/Weather.Infrastructure/bin/Debug/net6.0/Weather.Core.dll
+/Users/russell/Documents/GitHub/team-project-weather-backend/WeatherBackend/Weather.Infrastructure/bin/Debug/net6.0/Weather.Messages.dll
+/Users/russell/Documents/GitHub/team-project-weather-backend/WeatherBackend/Weather.Infrastructure/bin/Debug/net6.0/Weather.Core.pdb
+/Users/russell/Documents/GitHub/team-project-weather-backend/WeatherBackend/Weather.Infrastructure/bin/Debug/net6.0/Weather.Messages.pdb
+/Users/russell/Documents/GitHub/team-project-weather-backend/WeatherBackend/Weather.Infrastructure/obj/Debug/net6.0/Weather.Infrastructure.csproj.AssemblyReference.cache
+/Users/russell/Documents/GitHub/team-project-weather-backend/WeatherBackend/Weather.Infrastructure/obj/Debug/net6.0/Weather.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/Users/russell/Documents/GitHub/team-project-weather-backend/WeatherBackend/Weather.Infrastructure/obj/Debug/net6.0/Weather.Infrastructure.AssemblyInfoInputs.cache
+/Users/russell/Documents/GitHub/team-project-weather-backend/WeatherBackend/Weather.Infrastructure/obj/Debug/net6.0/Weather.Infrastructure.AssemblyInfo.cs
+/Users/russell/Documents/GitHub/team-project-weather-backend/WeatherBackend/Weather.Infrastructure/obj/Debug/net6.0/Weather.Infrastructure.csproj.CoreCompileInputs.cache
+/Users/russell/Documents/GitHub/team-project-weather-backend/WeatherBackend/Weather.Infrastructure/obj/Debug/net6.0/Weather.Infrastructure.csproj.CopyComplete
+/Users/russell/Documents/GitHub/team-project-weather-backend/WeatherBackend/Weather.Infrastructure/obj/Debug/net6.0/Weather.Infrastructure.dll
+/Users/russell/Documents/GitHub/team-project-weather-backend/WeatherBackend/Weather.Infrastructure/obj/Debug/net6.0/refint/Weather.Infrastructure.dll
+/Users/russell/Documents/GitHub/team-project-weather-backend/WeatherBackend/Weather.Infrastructure/obj/Debug/net6.0/Weather.Infrastructure.pdb
+/Users/russell/Documents/GitHub/team-project-weather-backend/WeatherBackend/Weather.Infrastructure/obj/Debug/net6.0/ref/Weather.Infrastructure.dll

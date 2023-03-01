@@ -1,0 +1,12 @@
+/Users/russell/Documents/GitHub/team-project-weather-backend/WeatherBackend/Weather.Response/bin/Debug/net6.0/Weather.Messages.deps.json
+/Users/russell/Documents/GitHub/team-project-weather-backend/WeatherBackend/Weather.Response/bin/Debug/net6.0/Weather.Messages.dll
+/Users/russell/Documents/GitHub/team-project-weather-backend/WeatherBackend/Weather.Response/bin/Debug/net6.0/Weather.Messages.pdb
+/Users/russell/Documents/GitHub/team-project-weather-backend/WeatherBackend/Weather.Response/obj/Debug/net6.0/Weather.Messages.csproj.AssemblyReference.cache
+/Users/russell/Documents/GitHub/team-project-weather-backend/WeatherBackend/Weather.Response/obj/Debug/net6.0/Weather.Messages.GeneratedMSBuildEditorConfig.editorconfig
+/Users/russell/Documents/GitHub/team-project-weather-backend/WeatherBackend/Weather.Response/obj/Debug/net6.0/Weather.Messages.AssemblyInfoInputs.cache
+/Users/russell/Documents/GitHub/team-project-weather-backend/WeatherBackend/Weather.Response/obj/Debug/net6.0/Weather.Messages.AssemblyInfo.cs
+/Users/russell/Documents/GitHub/team-project-weather-backend/WeatherBackend/Weather.Response/obj/Debug/net6.0/Weather.Messages.csproj.CoreCompileInputs.cache
+/Users/russell/Documents/GitHub/team-project-weather-backend/WeatherBackend/Weather.Response/obj/Debug/net6.0/Weather.Messages.dll
+/Users/russell/Documents/GitHub/team-project-weather-backend/WeatherBackend/Weather.Response/obj/Debug/net6.0/refint/Weather.Messages.dll
+/Users/russell/Documents/GitHub/team-project-weather-backend/WeatherBackend/Weather.Response/obj/Debug/net6.0/Weather.Messages.pdb
+/Users/russell/Documents/GitHub/team-project-weather-backend/WeatherBackend/Weather.Response/obj/Debug/net6.0/ref/Weather.Messages.dll
