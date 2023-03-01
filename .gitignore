@@ -1,3 +1,80 @@
-# .NET files
-*.dll
+# .NET 6 #
+#####################
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+bin/
+obj/
+log/
+*.log
+*.tlog
+*.tlog.*
+*.opendb
+*.user
+*.suo
+
+# Visual Studio files
+.vs/
+*.csproj.user
+*.userprefs
+*.sln.docstates
+*.bak
+*.vssscc
+*.vspscc
+
+# Other files and folders
+[Bb]in/
+[Oo]bj/
+.nuget/
+packages/
+*.psess
+*.dbmdl
+*.dbproj.user
+*.cache
+[Tt]est[Rr]esult*/
+[build]/
+_UpgradeReport_Files/
+Backup*/
+*.dbmdl
+
+# Rider files
+.idea/
+*.sln.iml
+
+# NuGet
+## Ignore the packages folder at the root of the repository
+## Only ignore packages.config files referencing this repository
+#src/**/packages.config
+#packages/
+#*.nupkg
+#**/node_modules/
+
+# Build results
+*_i.c
+*_p.c
+*.ilk
+*.meta
+*.obj
+*.pch
 *.pdb
+*.pgc
+*.pgd
+*.rsp
+*.sbr
+*.tlb
+*.tli
+*.tlh
+*.tmp
+*.tmp_proj
+*.log
+*.vspscc
+*.vssscc
+.builds
+*.pidb
+*.svclog
+*.scc
+*.tsd
+*.mdf
+*.ldf
