@@ -1,13 +1,14 @@
 ﻿using System;
 using Weather.Core.Models;
+using Weather.Messages.Responses;
 
 namespace Weather.Core.IServices
 {
 	public interface IPlantService
 	{
-		Task<IList<Plant>> GetAllPlantsAsync();
+		Task<IList<GetPlantsResponse>> GetAllPlantsAsync();
 
-		Task<IList<Plant>> GetPlantsByWeather(int weatherType);
+		Task<IList<GetPlantsResponse>> GetPlantsByWeather(int weatherType);
 
     }
 }

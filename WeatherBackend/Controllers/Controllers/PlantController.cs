@@ -24,13 +24,13 @@ public class PlantController : ControllerBase
 
     [HttpGet]
     [Route("GetAllPlants")]
-    public async Task<ActionResult<GetAllPlantsResponse>> GetAllPlants()
+    public async Task<ActionResult<GetPlantsResponse>> GetAllPlants()
     {
         ActionResult result = null;
         try
         {
             var plant = await this.plantService.GetAllPlantsAsync();
-            result = new JsonResult(mapper.Map<List<GetAllPlantsResponse>>(plant));
+            result = new JsonResult(plant);
         }
         catch (Exception ex)
         {
@@ -42,13 +42,13 @@ public class PlantController : ControllerBase
     }
     [HttpGet]
     [Route("GetPlantsFromWeather")]
-    public async Task<ActionResult<GetAllPlantsResponse>> GetPlantsByWeather(int weatherID)
+    public async Task<ActionResult<GetPlantsResponse>> GetPlantsByWeather(int weatherID)
     {
         ActionResult result = null;
         try
         {
             var plant = await this.plantService.GetPlantsByWeather(weatherID);
-            result = new JsonResult(mapper.Map<List<GetAllPlantsResponse>>(plant));
+            result = new JsonResult(plant);
         }
         catch (Exception ex)
         {

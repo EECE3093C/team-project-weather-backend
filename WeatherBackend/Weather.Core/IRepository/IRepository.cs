@@ -11,6 +11,8 @@
 
         Task<T> GetAsync(object[] ids);
 
+        Task<T> GeyByCondition(Expression<Func<T, bool>> expression);
+
         Task<IList<T>> GetAllByConditionAsync(Expression<Func<T, bool>> expression);
 
         Task<IList<T>> GetAllAsync();

@@ -9,9 +9,9 @@ namespace Weather.Infrastructure.Mappers
 	{
 		public MessageMappingProfile()
 		{
-			CreateMap<Plant, GetAllPlantsResponse>()
-				.ForMember(destination => destination.PlantName, options => options.MapFrom(source => source.PlantName))
-				 .ForMember(destination => destination.PlantDescription, options => options.MapFrom(source => source.PlantDescription))
+			CreateMap<Plant, GetPlantsResponse>()
+				.ForMember(destination => destination.Name, options => options.MapFrom(source => source.Name))
+				 .ForMember(destination => destination.Description, options => options.MapFrom(source => source.Description))
 				 .ForMember(destination => destination.WeatherType, options => options.MapFrom(source => source.WeatherTypeFk));
 
         }

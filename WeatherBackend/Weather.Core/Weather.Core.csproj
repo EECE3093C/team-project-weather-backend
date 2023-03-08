@@ -17,6 +17,8 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
+    <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.14" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="IServices\" />
@@ -25,5 +27,8 @@
   <ItemGroup>
     <Folder Include="IServices\" />
     <Folder Include="IRepository\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Weather.Response\Weather.Messages.csproj" />
   </ItemGroup>
 </Project>

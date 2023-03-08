@@ -6,8 +6,12 @@ using Weather.Messages;
 using Weather.Infrastructure.Mappers;
 using Weather.Core.IRepository;
 using Weather.Infrastructure.Repositories;
+using Microsoft.Extensions.DependencyInjection;
 using Weather.Core.IServices;
 using Weather.Services;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.IdentityModel.Tokens;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -22,12 +26,29 @@ builder.Services.AddDbContext<PlantDbContext>(options =>
     options.UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking);
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 }, ServiceLifetime.Transient);
+builder.Services.AddDbContext<PlantDbContext>(options =>
+{
+    options.UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking);
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+}, ServiceLifetime.Transient);
+
 builder.Services.AddAutoMapper(typeof(MessageMappingProfile));
 
 //Services
 builder.Services.AddTransient<IPlantService, PlantService>();
+builder.Services.AddTransient<IAuthenticateService, AuthenticateService>();
+builder.Services.AddTransient<IPasswordHasher<AspNetUser>, PasswordHasher<AspNetUser>>()
+.Configure<PasswordHasherOptions>(options =>
+{
+    options.IterationCount = 1000;
+    options.CompatibilityMode = PasswordHasherCompatibilityMode.IdentityV2;
+});
+builder.Services.AddIdentity<AspNetUser, IdentityRole>()
+        .AddEntityFrameworkStores<PlantDbContext>()
+        .AddDefaultTokenProviders();
 // Repositories
 builder.Services.AddTransient<IPlantRepository, PlantRepository>();
+builder.Services.AddTransient<IAspNetUserRepository, AspNetUserRepository>();
 
 var app = builder.Build();
 

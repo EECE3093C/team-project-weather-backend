@@ -24,6 +24,14 @@ namespace Weather.Infrastructure.Repository
             return await _context.Set<T>().FindAsync(id);
         }
 
+        public async Task<T> GeyByCondition(Expression<Func<T, bool>> expression)
+        {
+            return await _context.Set<T>()
+                                 .AsNoTracking()
+                                 .Where(expression)
+                                 .FirstOrDefaultAsync();
+        }
+
         public async Task<T> GetAsync(object[] ids)
         {
             return await _context.Set<T>().FindAsync(ids);
