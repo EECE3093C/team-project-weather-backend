@@ -3,7 +3,7 @@
   <Sdk Name="Microsoft.Build.Sql" Version="0.1.7-preview" />
   <PropertyGroup>
     <Name>DatabaseProjectPlantDB</Name>
-    <ProjectGuid>{62EB7262-152F-4891-A993-4746BF51311E}</ProjectGuid>
+    <ProjectGuid>{1EEFE1C5-3263-4461-AF3A-1EF3989B4D7F}</ProjectGuid>
     <DSP>Microsoft.Data.Tools.Schema.Sql.Sql150DatabaseSchemaProvider</DSP>
     <ModelCollation>1033, CI</ModelCollation>
   </PropertyGroup>
