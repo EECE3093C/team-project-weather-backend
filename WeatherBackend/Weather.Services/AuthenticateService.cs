@@ -25,7 +25,7 @@ public class AuthenticateService : IAuthenticateService
         this.aspNetUserRepository = aspNetUserRepository;
     }
 
-    public async Task<AspNetUser> Register(RegisterRequest request)
+    public async Task<AspNetUser> RegisterUser(RegisterRequest request)
     {
         try
         {

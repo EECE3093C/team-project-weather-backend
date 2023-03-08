@@ -1,5 +1,7 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Weather.Core.Enums;
 using Weather.Core.IServices;
 using Weather.Core.Models;
 using Weather.Messages.Requests;
@@ -34,7 +36,7 @@ public class AuthenticateController : ControllerBase
         ActionResult result = null;
         try
         {
-            var createdUser = await authenticateService.Register(request);
+            var createdUser = await authenticateService.RegisterUser(request);
             result = Ok(new RegisterResponse
             {
                 Status = "Success"
@@ -49,7 +51,8 @@ public class AuthenticateController : ControllerBase
         return result;
     }
     [HttpDelete]
-    [Route("Register")]
+    [Authorize(Roles = Roles.AdminRole)]
+    [Route("DeleteUser")]
     public async Task<ActionResult<GetPlantsResponse>> DeleteUser(DeleteUserRequest request)
     {
         ActionResult result = null;

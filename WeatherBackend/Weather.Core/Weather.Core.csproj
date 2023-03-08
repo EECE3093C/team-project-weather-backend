@@ -23,10 +23,12 @@
   <ItemGroup>
     <None Remove="IServices\" />
     <None Remove="IRepository\" />
+    <None Remove="Enums\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="IServices\" />
     <Folder Include="IRepository\" />
+    <Folder Include="Enums\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Weather.Response\Weather.Messages.csproj" />

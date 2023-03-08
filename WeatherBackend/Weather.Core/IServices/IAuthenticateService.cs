@@ -6,7 +6,7 @@ namespace Weather.Core.IServices
 {
 	public interface IAuthenticateService
 	{
-		Task<AspNetUser> Register(RegisterRequest request);
+		Task<AspNetUser> RegisterUser(RegisterRequest request);
 
 		Task DeleteUser(DeleteUserRequest request);
 

@@ -12,6 +12,7 @@ using Weather.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Weather.Core.Enums;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -32,6 +33,10 @@ builder.Services.AddDbContext<PlantDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 }, ServiceLifetime.Transient);
 
+builder.Services.AddAuthorization(options =>
+{
+    options.AddPolicy(Policies.AdminPolicy, builder => builder.RequireRole(Roles.AdminRole));
+});
 builder.Services.AddAutoMapper(typeof(MessageMappingProfile));
 
 //Services
