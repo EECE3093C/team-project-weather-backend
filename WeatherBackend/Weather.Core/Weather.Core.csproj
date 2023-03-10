@@ -24,13 +24,22 @@
     <None Remove="IServices\" />
     <None Remove="IRepository\" />
     <None Remove="Enums\" />
+    <None Remove="Exceptions\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="IServices\" />
     <Folder Include="IRepository\" />
     <Folder Include="Enums\" />
+    <Folder Include="Exceptions\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Weather.Response\Weather.Messages.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Exceptions\Exceptions\PermissionException.cs" />
+    <Compile Remove="Exceptions\Exceptions\DuplicateException.cs" />
+    <Compile Remove="Exceptions\Exceptions\NotFoundException.cs" />
+    <Compile Remove="Exceptions\Exceptions\BusinessRuleException.cs" />
+    <Compile Remove="Exceptions\Exceptions\ReportException.cs" />
   </ItemGroup>
 </Project>

@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
 namespace Weather.Core.Models;
 
@@ -105,7 +104,7 @@ public partial class PlantDbContext : DbContext
 
         modelBuilder.Entity<Plant>(entity =>
         {
-            entity.ToTable("Plant");
+            entity.HasKey(e => e.Id).HasName("PK_Plant");
 
             entity.Property(e => e.Description).IsUnicode(false);
             entity.Property(e => e.Name).HasMaxLength(255);

@@ -10,6 +10,8 @@ namespace Weather.Core.IServices
 
 		Task DeleteUser(DeleteUserRequest request);
 
+		Task<string> Login(LoginRequest request);
+
     }
 }
 

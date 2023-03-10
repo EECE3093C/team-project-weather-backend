@@ -1,5 +1,8 @@
-﻿using AutoMapper;
+﻿using System.Security.Claims;
+using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Weather.Core.Enums;
 using Weather.Core.IServices;
 using Weather.Core.Models;
 using Weather.Messages.Responses;

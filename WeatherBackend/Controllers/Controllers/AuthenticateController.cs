@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Weather.Core.Enums;
+using Weather.Core.Exceptions;
 using Weather.Core.IServices;
 using Weather.Core.Models;
 using Weather.Messages.Requests;
@@ -31,7 +32,7 @@ public class AuthenticateController : ControllerBase
 
     [HttpPost]
     [Route("Register")]
-    public async Task<ActionResult<GetPlantsResponse>> RegisterUser(RegisterRequest request)
+    public async Task<ActionResult> RegisterUser(RegisterRequest request)
     {
         ActionResult result = null;
         try
@@ -50,10 +51,11 @@ public class AuthenticateController : ControllerBase
 
         return result;
     }
+
     [HttpDelete]
-    [Authorize(Roles = Roles.AdminRole)]
+  //  [Authorize(Roles = Roles.AdminRole)]
     [Route("DeleteUser")]
-    public async Task<ActionResult<GetPlantsResponse>> DeleteUser(DeleteUserRequest request)
+    public async Task<ActionResult> DeleteUser(DeleteUserRequest request)
     {
         ActionResult result = null;
         try
@@ -62,6 +64,39 @@ public class AuthenticateController : ControllerBase
             result = Ok(new RegisterResponse
             {
                 Status = "Success"
+            });
+        }
+        
+        catch (NotFoundException ex)
+        {
+            logger.LogError(ex, "An exception occurred");
+            result = new NotFoundObjectResult(new ProblemDetails()
+            {
+                Status = StatusCodes.Status404NotFound,
+                Detail = ex.Message,
+                Title = "Error"
+            });
+        }
+        catch (Exception ex)
+        {
+            logger.LogError(ex, "An exception occurred");
+            result = StatusCode(StatusCodes.Status500InternalServerError);
+        }
+
+        return result;
+    }
+
+    [HttpPost]
+    [Route("Login")]
+    public async Task<ActionResult<string>> Login(LoginRequest request)
+    {
+        ActionResult result = null;
+        try
+        {
+            var token = authenticateService.Login(request);
+            result =  Ok(new
+            {
+                token = token
             });
         }
         catch (Exception ex)
