@@ -61,5 +61,24 @@ public class PlantController : ControllerBase
 
         return result;
     }
+
+    [HttpGet]
+    [Route("GetWeather")]
+    public async Task<ActionResult<WeatherByLocation>> GetWeather(double latitude, double longitude)
+    {
+        ActionResult result = null;
+        try
+        {
+            var weather = await this.plantService.GetWeather(latitude, longitude);
+            result = new JsonResult(weather);
+        }
+        catch (Exception ex)
+        {
+            logger.LogError(ex, "An exception occurred");
+            result = StatusCode(StatusCodes.Status500InternalServerError);
+        }
+
+        return result;
+    }
 }
 

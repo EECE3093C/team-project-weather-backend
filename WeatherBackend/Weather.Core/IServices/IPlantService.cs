@@ -9,6 +9,7 @@ namespace Weather.Core.IServices
 		Task<IList<GetPlantsResponse>> GetAllPlantsAsync();
 
 		Task<IList<GetPlantsResponse>> GetPlantsByWeather(int weatherType);
+        Task<WeatherByLocation> GetWeather(double latitude, double longitude);
 
     }
 }
