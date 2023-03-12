@@ -453,3 +453,4 @@ $RECYCLE.BIN/
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
+WeatherBackend/Weather.Core/.DS_Store
